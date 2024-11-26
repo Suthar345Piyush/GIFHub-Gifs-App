@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+   .gradient{
+    @apply bg-gradient-to-r  from-orange-500 via-red-600 to-purple-700;
+   }
+   .faded-text {
+      @apply font-bold text-sm text-gray-400;
+    }
+    .divider {
+      @apply w-full h-0.5 my-6 bg-gray-800;
+    }
+} 
