@@ -6,7 +6,7 @@ const FollowOn = () => {
     <div className="faded-text pt-2">
       <span>Connect on:</span>
       <div className="flex gap-4 pt-3">
-        <a href="https://x.com/piPlaysS" className="text-gray-600 hover:text-black transition-colors duration-300">
+        <a href="https://x.com/PiyushS35" className="text-gray-600 hover:text-black transition-colors duration-300">
           <FaXTwitter size={25}/>
         </a>
         <a href="https://github.com/Suthar345Piyush" className="text-gray-600 hover:text-white transition-colors duration-300">
