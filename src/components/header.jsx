@@ -78,7 +78,7 @@ const Header = () => {
                  to={`/${category.name_encoded}`}>
                 {category.name}
                 </Link>
-              );
+              )
             })};
           </div>
         </div>
