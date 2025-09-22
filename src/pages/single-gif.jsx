@@ -8,7 +8,7 @@ import {HiOutlineExternalLink} from "react-icons/hi";
 import {HiMiniChevronDown, HiMiniChevronUp, HiMiniHeart} from "react-icons/hi2";
 import {FaPaperPlane} from "react-icons/fa6";
 import {IoCodeSharp} from "react-icons/io5";
-import Share from "./share";
+
 
 const contentType = ["gifs", "stickers", "texts"];
 
@@ -246,7 +246,7 @@ const GifPage = () => {
             >
               <FaPaperPlane size={25} 
               className={`${
-                 Share.includes(gif.id) ? "text-blue-600" : ""
+                favorites.includes(gif.id) ? "text-blue-600" : ""
               }`}/>
               Share
             </button>
