@@ -8,6 +8,7 @@ import {HiOutlineExternalLink} from "react-icons/hi";
 import {HiMiniChevronDown, HiMiniChevronUp, HiMiniHeart} from "react-icons/hi2";
 import {FaPaperPlane} from "react-icons/fa6";
 import {IoCodeSharp} from "react-icons/io5";
+import Share from "./share";
 
 const contentType = ["gifs", "stickers", "texts"];
 
@@ -134,9 +135,11 @@ const GifPage = () => {
     }
   });
 }; 
-
+   
+    // will complete this section in two days 
   const EmbedGif = () => {
     
+
   };
 
   return (
@@ -230,7 +233,7 @@ const GifPage = () => {
               className="flex gap-5 items-center font-bold text-lg"
             >
               <HiMiniHeart
-                size={30}
+                size={25}
                 className={`${
                   favorites.includes(gif.id) ? "text-red-500" : ""
                 }`}
@@ -243,7 +246,7 @@ const GifPage = () => {
             >
               <FaPaperPlane size={25} 
               className={`${
-                 favorites.includes(gif.id) ? "text-blue-600" : ""
+                 Share.includes(gif.id) ? "text-blue-600" : ""
               }`}/>
               Share
             </button>
