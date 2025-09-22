@@ -136,10 +136,9 @@ const GifPage = () => {
   });
 }; 
    
-    // will complete this section in two days 
-  const EmbedGif = () => {
     
-
+  const EmbedGif = () => {
+    // will complete this section in two days 
   };
 
   return (
