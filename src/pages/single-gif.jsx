@@ -35,7 +35,10 @@ const GifPage = () => {
     };
 
     fetchGif();
-  }, []);
+  }, [type, slug, gf]); // Added dependencies
+
+  // Check if favorites is an array, if not use empty array
+  const isFavorite = Array.isArray(favorites) && favorites.includes(gif.id);
 
   const shareGif = () => {
      const shareMenu = document.createElement('div');
@@ -234,7 +237,7 @@ const GifPage = () => {
               <HiMiniHeart
                 size={25}
                 className={`${
-                  favorites.includes(gif.id) ? "text-red-500" : ""
+                  isFavorite ? "text-red-500" : ""
                 }`}
               />
               Favorite
@@ -243,10 +246,7 @@ const GifPage = () => {
               onClick={shareGif} 
               className="flex gap-6 items-center font-bold text-lg"
             >
-              <FaPaperPlane size={25} 
-              className={`${
-                favorites.includes(gif.id) ? "text-blue-600" : ""
-              }`}/>
+              <FaPaperPlane size={25} />
               Share
             </button>
             <button
