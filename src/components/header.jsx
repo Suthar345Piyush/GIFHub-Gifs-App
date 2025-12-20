@@ -30,14 +30,14 @@ const Header = () => {
         <div className= "font-bold text-md flex gap-3 items-center">
           {/* render categories */}
           {categories?.slice(0 , 5)?.map((category) => {
-        return (  // this slice(0,5) takes starting 5 elements
+        return (  
           <Link 
           key = {categories.name}
           to={`/${category.name_encoded}`}
           className="px-4 py-1 hover:gradient border-b-4 hidden lg:block">
           {category.name}
         </Link>
-        );
+        )
           })}
         <button onClick={() => setShowCategories(!showCategories)}>
           <GiThreePointedShuriken 
