@@ -17,6 +17,9 @@ const Category = () => {
     setSearchResults(data);
   };
 
+
+
+  
   useEffect(() => {
     fetchSearchResults();
   }, [category]);
